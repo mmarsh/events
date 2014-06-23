@@ -1,0 +1,79 @@
+.errorMessage
+{
+    background: red;
+}
+
+.tableHeader
+{
+    font-weight: bold;
+}
+
+.gridStyle
+{
+    border-collapse: collapse;
+    width: 900px;
+}
+
+.gridStyle tr 
+{
+    border: solid;
+    border-width: 1px 0;
+}
+
+.gridStyle tr:nth-child(odd)	 
+{ 
+    background-color:#eee; 
+} 
+
+.gridStyle tr:nth-child(even)	 
+{ 
+    background-color:#fff; 
+}
+
+.gridStyle td
+{
+    padding: 6px;
+
+}
+
+.row div
+{
+    display: inline-block;
+    border: 1px solid rgb(212,212,212);
+}
+
+.clickable
+{
+    color: #0000FF;
+    text-decoration: underline;
+    cursor: pointer; cursor: hand;
+}
+
+.activeTab 
+{
+    background: #7777F7;
+    color: white;
+    border: 1px solid black;
+}
+
+.inactiveTab 
+{
+    border: 1px solid black;
+    cursor: pointer; cursor: hand;
+}
+
+.animate-show {
+
+}
+
+.animate-show.ng-hide-add.ng-hide-add-active,
+.animate-show.ng-hide-remove.ng-hide-remove-active {
+  -webkit-transition:all linear 1.5s;
+  transition:all linear 1.5s;
+}
+
+.animate-show.ng-hide {
+  line-height:0;
+  opacity:0;
+  padding:0 10px;
+}
