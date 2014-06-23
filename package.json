@@ -1,0 +1,8 @@
+{
+  "name": "vivid-seats-event-challenge",
+  "description": "Implementation of Vivid Seats event challenge",
+  "author": "Maitland Marsh <maitland.marsh@gmail.com>",
+  "devDependencies": {
+    "karma": "0.12.16"
+  }
+}
