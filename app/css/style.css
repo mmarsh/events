@@ -49,16 +49,23 @@
     cursor: pointer; cursor: hand;
 }
 
+.tab
+{
+    border: 1px solid black;
+    border-bottom: none;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
 .activeTab 
 {
     background: #7777F7;
     color: white;
-    border: 1px solid black;
+ 
 }
 
 .inactiveTab 
 {
-    border: 1px solid black;
     cursor: pointer; cursor: hand;
 }
 

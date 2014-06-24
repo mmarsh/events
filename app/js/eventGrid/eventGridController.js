@@ -16,6 +16,9 @@ angular.module('vividSeats')
             var newEvent = {};
             newEvent.rootEvent = event;
             newEvent.editing = false;
+            newEvent.toggleEdit = function () {
+                this.editing = !this.editing;
+            }
             this.push(newEvent);
         }, newEvents);
         
@@ -30,14 +33,10 @@ angular.module('vividSeats')
             $scope.errorMessage = '';
         }, displayError);
     };
-
-    $scope.$on('tabChanged', function (eventData, activeTab) {
+    
+    $scope.$on('tabChanged', function () {
         refreshEvents();
     });
-    
-    $scope.edit = function(event) {
-        event.editing = !event.editing;
-    };
 
     $scope.remove = function (event) {
         if(window.confirm('Are you sure you want to remove this event?')) {
@@ -49,7 +48,7 @@ angular.module('vividSeats')
         VividSeats.eventService.update(event.rootEvent, refreshEvents, displayError);
     };
 
-    $scope.cancelNew = function () {
+    $scope.cancelAdd = function () {
         $scope.newEvent = undefined;
     }
 
@@ -57,7 +56,7 @@ angular.module('vividSeats')
         $scope.newEvent.id = eventId++;
         $scope.newEvent.venue.id =  venueId++;
         VividSeats.eventService.add($scope.newEvent, function () {
-            $scope.cancelNew();
+            $scope.cancelAdd();
             refreshEvents();
         }, displayError);
     }
