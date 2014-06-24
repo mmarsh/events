@@ -16,7 +16,7 @@ Go to the root directory and run
 ```
 npm install
 bower install
-node node_modules\\karma\bin\\karma start test\\karma.conf.js --single-run
+node node_modules\karma\bin\karma start test\karma.conf.js --single-run
 ```
 
 npm install will bring down all of the node dependencies, which are laid out in package.json.
