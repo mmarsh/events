@@ -11,8 +11,7 @@ angular.module('vividSeats')
         };
     };
     var changeActiveTab = function (tab) {
-        activeTab = tab;        
-        history.pushState({id: activeTab.id}, 'Tab '+ activeTab.id, "?tab=" + activeTab.id);
+        activeTab = tab; 
         tabTrackingService.updateCurrentTab(activeTab);
         $rootScope.$broadcast('tabChanged', activeTab);
     };
@@ -53,7 +52,8 @@ angular.module('vividSeats')
     
     $scope.tabClick = function (tab) {
         changeActiveTab(tab);
+        history.pushState({id: activeTab.id}, 'Tab '+ activeTab.id, "?tab=" + activeTab.id);
     }
     
-    changeActiveTab(getTabById(startingTabId));
+    $scope.tabClick(getTabById(startingTabId));
 });

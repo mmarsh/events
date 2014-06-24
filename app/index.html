@@ -1,16 +1,3 @@
-<!-- 
-
-TODO
-
-Unit Tests
-Retry
-Form Validation
-More Directives
-Cross Browser testing
-Make your own tab
-
- -->
-
 <!DOCTYPE html>
 <html ng-app="vividSeats">
 <head>
@@ -32,7 +19,7 @@ Make your own tab
     </div>
     <div ng-controller="eventGridController">
         <div class="errorMessage" ng-show="errorMessage">
-            {{errorMessage}} <span class="clickable" ng-click="alert('test')">Retry?</span>
+            {{errorMessage}} : Please attempt the desired action again
         </div>
         
         <table class="gridStyle" ng-show="events">
