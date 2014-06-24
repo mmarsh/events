@@ -41,4 +41,4 @@ Things that would be cool to do
 --------------------
   - Implement some sort of retry logic. Right now the app contends with the intermittent service failures by prompting the user to try again.
   - More advanced tab filtering logic. For example, the Local Events could tap into the browser's location features (right now it's hard-coded to assume you're in NY)
-  - Let the user make their own tab. A few form fields and they could specify something simple like a string, a comparator, and a data field and the app can generate a filter, create new tab to hang on to, and maybe even stash it in local storage so you can have it the next time you start the app
+  - Let the user make their own tab. A few form fields and they could specify something simple like a string, a comparator, and a data field and the app can generate a filter, create new tab to hang on to it, and maybe even stash it in local storage so you can have it the next time you start the app
