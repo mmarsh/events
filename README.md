@@ -15,7 +15,7 @@ Go to the root directory and run
 
 ```
 npm install
-bower install
+node node_modules\bower\bin\bower install
 node node_modules\karma\bin\karma start test\karma.conf.js --single-run
 ```
 
@@ -26,7 +26,7 @@ script is loaded through angularjs.org's hosted files. For the tests we want a l
 as the angular mocking module for helping us test. 
 All of these dependencies are found in bower.json
 
-Lastly, I used the karma test runner with jasmine as my testing framework.
+Lastly, I used the karma test runner with jasmine as my testing framework and PhantomJS (headless JS engine) as a runtime.
 Karma has great plugin support for things like jasmine, and it can also continuously watch for modified files and execute tests as you're working, shortening the feedback loop.
 To start karma in continuous run mode, you can drop the --single-run switch from the start command
 
