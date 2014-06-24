@@ -13,7 +13,7 @@ Unit Tests
 To run the unit tests you will need nodejs and npm installed.
 Go to the root directory and run
 
-```sh
+```
 npm install
 bower install
 node node_modules\\karma\bin\\karma start test\\karma.conf.js --single-run
